@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  border-collapse: collapse;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+.gol__container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.gol__nav {
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+}
+
+.gol__nav--logo {
+  font-size: 22px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.gol__input-dims {
+  width: 3.5rem;
+}
+
+.gol__board {
+  margin: 20px 20px;
+  border-spacing: 0;
+}
+
+.gol__controls {
+  display: flex;
+}
+
+.gol__controls-label {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.gol__controls--element {
+  padding: 10px;
+}
+
+.gol__run-game-button {
+  width: 120px;
+}
+
+.gol__board--container {
+  display: flex;
+  justify-content: center;
+  background: #EEEEEE;
+  border-radius: 8px;
+  border: 1px solid #AAAAAA;
+}
+
+.gol-cell {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.gol-cell:first-of-type {
+  border-left: 1px solid black;
+}
+
+.gol-cell__alive {
+  background-color: green;
+}
+
+.gol-row:first-of-type {
+  border-top: 6px solid black;
+}
+
+/* toggle input */
+.toggle-input__container {
+  display: inline-block;
+  padding: 10px;
+}
+
+.toggle-input__readout {
+  width: 50px;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+/* slider input */
+.speed-control__container {
+  width: 150px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.speed-control__sliderBed {
+  background: #CCCCCC;
+  height: 6px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.speed-control__slider {
+  position: absolute;
+  left: 0;
+  top: -7px;
+  height: 20px;
+  width: 12px;
+  background: black;
+  cursor: pointer;
+}
